@@ -5,7 +5,6 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    padding-top: 70px; /* Espaço para o cabeçalho fixo */
 }
 
 header {
@@ -44,20 +43,35 @@ nav a:hover {
 }
 
 .banner {
-
-
+    background-image: url('https://example.com/banner-image.jpg'); /* Substitua pela URL da imagem desejada */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 70px; /* Espaço para o cabeçalho fixo */
+    min-height: 400px; /* Altura mínima para o banner */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner h1 {
     font-size: 3em;
     margin: 0;
+    background: linear-gradient(to right, #c00, #000); /* Degradê vermelho e preto */
+    -webkit-background-clip: text; /* Clip para o texto */
+    -webkit-text-fill-color: transparent; /* Preenchimento transparente */
 }
 
 .banner p {
     font-size: 1.5em;
+    color: black; /* Cor preta para o texto */
+    margin-top: 20px; /* Espaço entre o título e o parágrafo */
 }
 
-section {
+.about {
     padding: 20px;
     margin: 10px;
     background: white;
@@ -65,29 +79,33 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.news, .standings, .calendar, .signup {
-    border: 2px solid #c00; /* Borda vermelha */
+.signup {
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h3 {
-    color: #c00; /* Título das seções em vermelho */
+.signup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td {
+.signup input {
     padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    width: 80%;
+    border: 1px solid #c00; /* Borda vermelha */
+    border-radius: 5px;
 }
 
-th {
-    background-color: #333; /* Fundo escuro para cabeçalho da tabela */
-    color: white; /* Texto branco */
-}
-
-td {
-    background-color: #f9f9f9
+.signup button {
+    padding: 10px 20px;
+    background: #c00; /* Botão vermelho */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s
