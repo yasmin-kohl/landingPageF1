@@ -1,0 +1,93 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px; /* Espaço para o cabeçalho fixo */
+}
+
+header {
+    background: #000; /* Preto para o cabeçalho */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Torna o cabeçalho fixo */
+    top: 0; /* Fixa o cabeçalho no topo */
+    left: 0; /* Alinha o cabeçalho à esquerda */
+    right: 0; /* Alinha o cabeçalho à direita */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+
+
+}
+
+.banner h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.5em;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news, .standings, .calendar, .signup {
+    border: 2px solid #c00; /* Borda vermelha */
+}
+
+h3 {
+    color: #c00; /* Título das seções em vermelho */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333; /* Fundo escuro para cabeçalho da tabela */
+    color: white; /* Texto branco */
+}
+
+td {
+    background-color: #f9f9f9
